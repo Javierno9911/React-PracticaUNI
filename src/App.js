@@ -1,8 +1,7 @@
-// src/components/App.js
 import React from 'react';
 import NoteList from './NoteList';
 import NoteEditor from './NoteEditor';
-import './App.css'; // Importa el archivo de estilos
+import './App.css';
 
 function App() {
   return (

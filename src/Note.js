@@ -1,4 +1,3 @@
-// src/components/Note.js
 import React from 'react';
 
 function Note({ id, title, content, onDelete }) {

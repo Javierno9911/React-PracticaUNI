@@ -1,10 +1,9 @@
-// src/components/NoteEditor.js
 import React, { useState } from 'react';
 
 function NoteEditor() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const [savedNotes, setSavedNotes] = useState([]); // Nuevo estado para almacenar notas guardadas
+  const [savedNotes, setSavedNotes] = useState([]); 
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -15,9 +14,7 @@ function NoteEditor() {
   };
 
   const handleSaveNote = () => {
-    // Guardar la nota en el estado de notas guardadas
     setSavedNotes([...savedNotes, { title, content }]);
-    // Limpiar el título y el contenido después de guardar
     setTitle('');
     setContent('');
   };
