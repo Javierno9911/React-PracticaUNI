@@ -167,3 +167,7 @@ h2 {
   height: 300px; 
   max-height: 10vh; 
 }
+
+.boton-eliminar{
+  margin-left: 15px;
+}

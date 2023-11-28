@@ -25,19 +25,21 @@ function NoteList() {
       setNotes(JSON.parse(storedNotes));
     }
   }, []);
-
+ 
   const filteredNotes = notes.filter(
     (note) =>
       note.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       note.content.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  
   const handleSearch = () => {
     console.log(searchTerm);
     const searchOutputDiv = document.querySelector('.search-salida');
     if (searchOutputDiv) {
       searchOutputDiv.textContent = searchTerm;
     }
+
   };
 
   return (

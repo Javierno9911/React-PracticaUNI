@@ -19,6 +19,12 @@ function NoteEditor() {
     setContent('');
   };
 
+  const handleDeleteNote = (index) => {
+    const newNotes = [...savedNotes];
+    newNotes.splice(index, 1);
+    setSavedNotes(newNotes);
+  };
+
   return (
     <div className="note-editor">
       <h2>INSERTAR NOTA</h2>
@@ -34,6 +40,7 @@ function NoteEditor() {
           {savedNotes.map((note, index) => (
             <li key={index}>
               <strong>{note.title}:</strong> {note.content}
+              <button className="boton-eliminar" onClick={() => handleDeleteNote(index)}>ELIMINAR</button>
             </li>
           ))}
         </ul>
