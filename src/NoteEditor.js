@@ -34,13 +34,13 @@ function NoteEditor() {
       <div className="contenido_nota">
         <textarea placeholder="Contenido" value={content} onChange={handleContentChange} />   
       </div>
-      <button onClick={handleSaveNote}>GUARDAR</button>
+      <button onClick={handleSaveNote}>Guardar</button>
       <div className="saved-notes">
         <ul>
           {savedNotes.map((note, index) => (
             <li key={index}>
-              <strong>{note.title}:</strong> {note.content}
-              <button className="boton-eliminar" onClick={() => handleDeleteNote(index)}>ELIMINAR</button>
+              <strong><h3>{note.title}</h3></strong> {note.content}
+              <button className="boton-eliminar" onClick={() => handleDeleteNote(index)}>Eliminar</button>
             </li>
           ))}
         </ul>

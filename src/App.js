@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app">
       <div className="app-busqueda">
-        <h2>APLICACION NOTAS</h2>
+        <h2>BUSCADOR NOTAS</h2>
         <NoteList />
       </div>
       <div className="app-crear">
